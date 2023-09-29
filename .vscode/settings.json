@@ -1,0 +1,8 @@
+{
+	"search.exclude": {
+		"app/assets/stylesheets/bootstrap": true
+	},
+	"files.exclude": {
+		"app/assets/builds/*": true
+	}
+}

@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: twbs_development
+  database: bsdart_development
   username: development
   password: secret
 
@@ -31,7 +31,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: twbs_test
+  #username: bsdart_test
 
   # The password associated with the postgres role (username).
   #password:
@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: twbs_test
+  database: bsdart_test
   username: development
   password: secret
 
@@ -85,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: twbs_production
-  username: twbs
-  password: <%= ENV["TWBS_DATABASE_PASSWORD"] %>
+  database: bsdart_production
+  username: bsdart
+  password: <%= ENV["BSDART_DATABASE_PASSWORD"] %>

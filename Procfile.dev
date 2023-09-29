@@ -1,2 +1,2 @@
 web: bin/rails server -p 3000
-css: bin/rails dartsass:watch
+css: fswatch -0 --latency 0.75 -m poll_monitor -r ./app/assets/stylesheets/ | xargs -0 -n 1 rails dartsass:build
